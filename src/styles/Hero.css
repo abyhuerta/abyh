@@ -1,0 +1,22 @@
+#hero{
+    /* background-image: url('\img\Untitled_Artwork.png'); */
+    margin: auto;
+    width: 65vw;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#hero i{
+    font-size: 40px;
+}
+
+#hero a{
+    color: var(--title);
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+#hero a:hover{
+    color: var(--link);
+}

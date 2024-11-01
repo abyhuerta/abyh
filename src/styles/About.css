@@ -1,0 +1,19 @@
+#about{
+    margin:auto;
+    width:65vw;
+}
+
+img{
+    width:20vw;
+}
+.figure-caption{
+    color:var(--title)
+}
+
+p{
+    font-size: 20px;
+}
+
+li{
+    font-size: 20px;
+}

@@ -1,0 +1,36 @@
+/* carousel */
+#projects{
+    margin:auto;
+    /* align-items: center; */
+    max-width: 1000px;
+    min-height: 50vh;
+    margin-bottom: 20px;
+}
+
+.carousel{
+    margin-bottom: 30px;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+    height: 70vh;
+}
+.carousel img{
+    border-radius: 10px;
+    max-height: 70vh;
+    opacity: .3;
+}
+
+/* cards */
+.card{
+    padding:10px;
+    padding-bottom: 10px;
+    /* height:20vh; */
+    /* width: 20vw; */
+    background-color: var(--card);
+    color: var(--secondary)
+}
+
+.card-title{
+    color: var(--title);
+}

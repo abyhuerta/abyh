@@ -1,0 +1,17 @@
+#experience{
+    margin: auto;
+    width:65vw;
+}
+.joblist-job-title{
+    color:var(--title);
+    font-size: 20px;
+}
+
+.joblist-job-company{
+    color: var(--link);
+    font-size: 20px;
+}
+
+.job-description{
+    font-size: 20px;
+}

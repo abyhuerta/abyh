@@ -1,0 +1,41 @@
+:root{  
+    --primary: #0a192f;
+    --secondary: #8892b0; 
+    --link: #64ffda;
+    --title: #ccd6f6;
+    --card: #112240;
+    --darker: #040e1e;
+}
+
+body{
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: "NTR", sans-serif;
+    margin: auto;
+}
+a{
+    color: var(--link);
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+a:hover{
+    color: var(--title);
+}
+
+
+.header{
+    text-align: start;
+    color: var(--title);
+}
+
+span{
+    color: var(--link);
+}
+
+#about-target,
+#experience-target,
+#projects-target{
+  position:relative;
+  top: -100px;
+}
