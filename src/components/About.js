@@ -7,21 +7,9 @@ import '../styles/About.css';
 
 function About() {
     const intro = (
-        <p>
-            I am currently a Computer Science tutor at the{' '}
-            <span>
-                <a href="https://www.utsa.edu/about/#_ga=2.19426552.1357921105.1709004535-115529336.1699502345">
-                    University of Texas at San Antonio
-                </a>
-            </span>{' '}
-            for the CS Department and am conducting research with the{' '}
-            <span>
-                <a href="https://xintingyu.com/my-lab-at-ucsc/">
-                    Planetary Model CHaractErization Facility (PMCHEF)
-                </a>
-            </span>{' '}
-            lab under the direction of Dr. Yu. I am also pursuing a full-time Bachelor of Science in Computer Science
-            with a concentration in Software Engineering and Data Science. I've been working with several technologies,
+            <p>
+            I am currently a <b>Full Stack Developer</b> at <a href="https://scooterlab.utsa.edu/"> Scooter Lab</a> and a <b>full-time student</b> at  
+    <a href="https://www.utsa.edu/"> The University of Texas at San Antonio</a> where I'm pursuing a <b>Bachelor of Science in Computer Science</b> with a concentration in <b>Software Engineering</b>. I've been working with several technologies,
             including:
         </p>
     );
@@ -33,14 +21,14 @@ function About() {
         </p>
     );
 
-    const technologies = ["Javascript ES6+", "React.js", "Java", "Python", "AWS", "PHP"];
+    const technologies = ["Javascript ES6+", "React + Angular", "Java", "SpringBoot", "MySQL", "PHP", "AWS"];
 
     return (
         <div id="about">
             <h2 className="header">./about</h2>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={8}>
-                    <Grid size={8}>
+                    <Grid size={{xs:12,sm:6,md:8}}>
                         <div>
                             {intro}
                             <ul className="tech-stack">
@@ -53,7 +41,7 @@ function About() {
                             {extra}
                         </div>
                     </Grid>
-                    <Grid size={4}>
+                    <Grid size={{xs:12,sm:6,md:4}}>
                         <div>
                             <figure className="figure">
                                 <img src="/img/science.jpeg" className="figure-img img-fluid rounded" alt="..." />

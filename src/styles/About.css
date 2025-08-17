@@ -1,11 +1,11 @@
 #about{
     margin:auto;
-    width:65vw;
+    width:65%;
 }
 
-img{
-    width:20vw;
-}
+/* img{
+    width:50%;
+} */
 .figure-caption{
     color:var(--title)
 }
@@ -17,3 +17,12 @@ p{
 li{
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    #about{
+        margin:auto;
+        width:85%;
+    }
+    
+  }
+  

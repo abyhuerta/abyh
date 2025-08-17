@@ -1,6 +1,6 @@
 #experience{
-    margin: auto;
-    width:65vw;
+    margin:  auto;
+    width:65%;
 }
 .joblist-job-title{
     color:var(--title);
@@ -12,6 +12,10 @@
     font-size: 20px;
 }
 
-.job-description{
-    font-size: 20px;
-}
+@media (max-width: 768px) {
+    #experience{
+        margin:  auto;
+        width:90%;
+    }
+  }
+  

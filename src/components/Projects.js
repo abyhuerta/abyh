@@ -4,61 +4,67 @@ import Grid from '@mui/material/Grid2';
 import '../styles/Projects.css';
 
 function Projects() {
-    const starprojects = {
-        'Cosmos': {
-            techstack: ["three.js"],
-            desc: 'A remake of the solar system created using Three.js.',
-            link: 'https://github.com/abyhuerta/Cosmos',
-            open: 'https://abyhuerta.github.io/Cosmos/',
-            image: '/img/orbit.png'
-        },
-        'GEN-QR': {
-            techstack: ['moment.js', 'APIs', 'JavaScript'],
-            desc: 'A simple website that takes in user input and creates a QR Code as a .png file.',
-            link: 'https://github.com/abyhuerta/gen-QR',
-            open: 'https://abyhuerta.github.io/gen-QR/',
-            image: '/img/genQR.png'
-        },
-        'Aromagic': {
-            techstack: ['Firebase', 'JavaScript', 'HTML'],
-            desc: 'E-commerce website for aromatic products.',
-            link: 'https://github.com/abyhuerta/Aromagic',
-            open: '_blank',
-            image: '/img/aromagic.png'
-        }
-    };
+  const starprojects = {
+    'Cosmos': {
+        techstack: ["three.js"],
+        desc: 'A 3D solar system simulation built with Three.js.',
+        link: 'https://github.com/abyhuerta/Cosmos',
+        open: 'https://abyhuerta.github.io/Cosmos/',
+        image: '/img/orbit.png'
+    },
+    'GEN-QR': {
+        techstack: ['moment.js', 'APIs', 'JavaScript'],
+        desc: 'A QR code generator that converts user input into a downloadable PNG.',
+        link: 'https://github.com/abyhuerta/gen-QR',
+        open: 'https://abyhuerta.github.io/gen-QR/',
+        image: '/img/genQR.png'
+    },
+    'Aromagic': {
+        techstack: ['Firebase', 'JavaScript', 'HTML'],
+        desc: 'An e-commerce platform for aromatic products with Firebase integration.',
+        link: 'https://github.com/abyhuerta/Aromagic',
+        open: '_blank',
+        image: '/img/aromagic.png'
+    }
+};
+
     const project = {
-      'NutriPass':{
+      'NutriPass': {
           techstack: ['Flask', 'React.js', 'Python'],
-          desc: 'A app for filtering grocery items based on dietary needs (IN PROGRESS)',
+          desc: 'A grocery filtering app that identifies items based on dietary needs. (IN PROGRESS)',
           link: 'https://github.com/abyhuerta/NutriPass',
           open: 'https://github.com/abyhuerta/NutriPass',
       },
       'MINST': {
           techstack: ['Python'],
-          desc: 'Simple Neural Network for Digit Recognition.',
+          desc: 'A neural network for handwritten digit recognition.',
           link: 'https://github.com/abyhuerta/MINST',
           open: 'https://github.com/abyhuerta/MINST',
       },
-      'Ramos Boxing Gym Member System':{
-          techstack: ['Android Studio','SQLite','Java'],
-          desc: 'A member management app for a local boxing gym.',
+      'Ramos Boxing Gym Member System': {
+          techstack: ['Android Studio', 'SQLite', 'Java'],
+          desc: 'A mobile app for managing gym memberships and attendance.',
           link: 'https://github.com/abyhuerta/Ramos-Boxing-Gym-Member-System',
           open: 'https://github.com/abyhuerta/Ramos-Boxing-Gym-Member-System',
       },
-      'Ocean-card-matching-game':{
-          techstack: ['JavaScript','HTML'],
-          desc: 'Simple card matching game.',
+      'Ocean-card-matching-game': {
+          techstack: ['JavaScript', 'HTML'],
+          desc: 'A simple and interactive ocean-themed card matching game.',
           link: 'https://github.com/abyhuerta/ocean-card-match-game',
           open: 'https://abyhuerta.github.io/ocean-card-match-game/',
       },
       'Zathura': {
-        techstack: ['Python'],
-        desc: 'Linux GUI for app installations.',
-        link: 'https://github.com/joshuascript/Zathura',
-        open:'https://github.com/joshuascript/Zathura'
+          techstack: ['Python'],
+          desc: 'A Linux GUI for simplified app installations.',
+          link: 'https://github.com/joshuascript/Zathura',
+          open: 'https://github.com/joshuascript/Zathura'
+      },
+      'Schoolhouse-Creamery': {
+          techstack: ['React.js', 'PHP', 'MySQL', 'Clover API'],
+          desc: 'A website for a local ice cream shop with order management and payments. (IN PROGRESS)',
       }
-  }
+    };
+    
 
     const starprojectKeys = Object.keys(starprojects);
     const projectKeys = Object.keys(project);

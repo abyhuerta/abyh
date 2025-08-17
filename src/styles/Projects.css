@@ -34,3 +34,19 @@
 .card-title{
     color: var(--title);
 }
+
+/* Hide carousel on small screens (mobile devices) */
+@media (max-width: 768px) {
+    .carousel {
+      display: none;
+    }
+    #projects{
+        margin:auto;
+        /* align-items: center; */
+        width: 85%;
+        min-height: 50vh;
+        margin-bottom: 20px;
+    }
+    
+  }
+  

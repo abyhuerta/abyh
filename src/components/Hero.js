@@ -1,18 +1,23 @@
 import '../styles/Hero.css';
 import '../styles/style.css';
+import '../styles/FractalTree.css';
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';
+import FractalTree from "./fractalTree";
+
 
 function Hero(){
     return(
         <>
         <div id="hero">
-            <img src="./img/whale_shark.gif"></img>
+
+            {/* <FractalTree/> */}
             <h1>Hi, I'm <span>Aby</span>.</h1>
-            <h2>I'm a computer science student from Texas, US.<br/>I'm interested in full-stack development and researching in spacecraft systems & digital health.<br/></h2>
+            <h2>I'm a software engineer from Texas, passionate about building scalable applications and solving real-world problems through web development and data-driven solutions.<br/></h2>
+
             <h2>Say hi!</h2>
             <div id="contact">
             <Grid container spacing={0}>

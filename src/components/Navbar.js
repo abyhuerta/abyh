@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import '../styles/style.css';
 import '../styles/Navbar.css';
 
@@ -17,6 +18,7 @@ function Navbar(){
           <a href="#about-target" className="nav-link">About Me</a>
           <a href="#experience-target" className="nav-link">Experience</a>
           <a href="#projects-target" className="nav-link">Projects</a>
+          {/* <Link className="nav-link" to="/hpml">Research</Link> */}
         </div>
       </div>
     </div>

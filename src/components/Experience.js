@@ -55,24 +55,39 @@ function Experience() {
     const [value, setValue] = React.useState(0);
 
     const experiences = {
+        // 'SL':{
+        //     company: "Scooter Lab",
+        //     role: "Full Stack Developer @",
+        //     duration: "AUG 2025 - PRESENT",
+        //     desc:[
+
+        //     ]
+        // },
+        'VISA':{
+            company: "Visa",
+            role: "Software Engineer Intern @",
+            duration: "MAY 2025 - AUG 2025",
+            desc:[
+                "Developed a proof-of-concept application for client settlement file and document uploads with automated format and business rule validation and an integrated approval workflow, replacing over 3 separate applications.",
+                "Delivered a one-stop solution projected to automate processes valued at $15M and demoed to the client to gather feedback and align with business requirements."
+            ]
+        },
+        // 'AN':{
+        //     company: "Arrow North Design",
+        //     role: "Software Engineer Intern @",
+        //     duration: "JAN 2025 - MAY 2025",
+        //     desc:[
+
+        //     ]
+        // },
         'UTSA': {
             company: "The University of Texas at San Antonio",
             role: "Computer Science Tutor @",
-            duration: "AUG 2024 - PRESENT",
+            duration: "AUG 2024 - MAY 2025",
             desc: [
                 "Tutored to over 300 students, leading to a 30% increase in average student grades in programming courses.",
                 "Led 50+ individualized and group sessions to clarify complex topics such as coding, debugging, and computational thinking, consistently receiving 90% positive feedback on teaching effectiveness.",
                 "Collaborated with faculty to align tutoring strategies with course objectives, resulting in a 15% improvement in course success rates and positive feedback for patience and effective teaching methods."
-            ]
-        },
-        'PMCHEF': {
-            company: "Planetary Model Characterization Facility, University of Texas at San Antonio",
-            role:"Research Engineer @",
-            duration: "OCT 2024 - PRESENT",
-            desc: [
-              "Researched and implemented the Poseidon Python library to streamline astronomical data analysis, enhancing data processing capabilities for complex datasets.",
-              "Developed scripts with Poseidon for specific use cases, enabling efficient analysis of astronomical phenomena and improving data accuracy.",
-              "Led training sessions on Poseidon, instructing team members on library functionalities and best practices to ensure effective utilization across the research group."
             ]
         },
         'GSSOC': {
@@ -86,16 +101,16 @@ function Experience() {
                 "Integrated third-party APIs, adding 5+ new features to web applications and facilitating effective collaboration with global teams to meet project objectives."
             ]
         },
-        'GTX': {
-            company: "Global Tech Experience x Publicis Sapient",
-            role: "Web Development Apprentice @",
-            duration: "JAN 2024 - APR 2024",
-            desc: [
-                "Developed dynamic and responsive websites using HTML, CSS, Bootstrap, and JavaScript, leading to a 20% increase in user engagement and a 35% reduction in bounce rates.",
-                "Collaborated with a team of 4 to optimize and debug an existing codebase, resulting in a 50% improvement in page load times and a 30% increase in overall application stability.",
-                "Integrated third-party APIs, adding 5+ new features to web applications and facilitating effective collaboration with global teams to meet project objectives."
-            ]
-        }
+        // 'GTX': {
+        //     company: "Global Tech Experience x Publicis Sapient",
+        //     role: "Web Development Apprentice @",
+        //     duration: "JAN 2024 - APR 2024",
+        //     desc: [
+        //         "Developed dynamic and responsive websites using HTML, CSS, Bootstrap, and JavaScript, leading to a 20% increase in user engagement and a 35% reduction in bounce rates.",
+        //         "Collaborated with a team of 4 to optimize and debug an existing codebase, resulting in a 50% improvement in page load times and a 30% increase in overall application stability.",
+        //         "Integrated third-party APIs, adding 5+ new features to web applications and facilitating effective collaboration with global teams to meet project objectives."
+        //     ]
+        // }
     };
 
     const handleChange = (event, newValue) => {
@@ -112,18 +127,18 @@ function Experience() {
       value={value}
       onChange={handleChange}
       aria-label="basic tabs example"
-      textColor="inherit" // Ensures text color can be customized
+      textColor="inherit"
       TabIndicatorProps={{
-        style: { backgroundColor: '#64ffda' }, // Custom indicator color
+        style: { backgroundColor: '#64ffda' },
       }}
       sx={{
         '.MuiTab-root': {
-          color: '#ccd6f6', // Default tab color
+          color: '#ccd6f6', 
           fontFamily: 'NTR'
         },
         '.Mui-selected': {
-          color: '#64ffda', // Active tab color
-          fontWeight: 'bold', // Optional: Bold text for active tab
+          color: '#64ffda',
+          fontWeight: 'bold', 
         },
       }}
     >
