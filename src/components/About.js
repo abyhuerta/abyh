@@ -7,18 +7,18 @@ import '../styles/About.css';
 
 function About() {
     const intro = (
-            <p>
+            <h3>
             I am currently a <b>Full Stack Developer</b> at <a href="https://scooterlab.utsa.edu/"> Scooter Lab</a> and a <b>full-time student</b> at  
     <a href="https://www.utsa.edu/"> The University of Texas at San Antonio</a> where I'm pursuing a <b>Bachelor of Science in Computer Science</b> with a concentration in <b>Software Engineering</b>. I've been working with several technologies,
             including:
-        </p>
+        </h3>
     );
 
     const extra = (
-        <p>
+        <h3>
             When I'm not working, I like to follow the developments of science (specifically the cosmos), cooking, and I
-            enjoy creating art.
-        </p>
+            enjoy hiking.
+        </h3>
     );
 
     const technologies = ["Javascript ES6+", "React + Angular", "Java", "SpringBoot", "MySQL", "PHP", "AWS"];
@@ -34,7 +34,7 @@ function About() {
                             <ul className="tech-stack">
                                 {technologies.map((tech_item, i) => (
                                     <li key={i}>
-                                        <span>{tech_item}</span>
+                                        <h3><span>{tech_item}</span></h3>
                                     </li>
                                 ))}
                             </ul>
@@ -44,22 +44,23 @@ function About() {
                     <Grid size={{xs:12,sm:6,md:4}}>
                         <div>
                             <figure className="figure">
-                                <img src="/img/science.jpeg" className="figure-img img-fluid rounded" alt="..." />
-                                <figcaption className="figure-caption">
+                                <img height = "200px" src="/img/me1.jpg" className="figure-img img-fluid rounded" alt="..." />
+                                {/* <figcaption className="figure-caption">
                                     Some Mars rovers that are at the NASM
-                                </figcaption>
+                                </figcaption> */}
                             </figure>
-                            <figure className="figure">
-                                <img src="/img/art.png" className="figure-img img-fluid rounded" alt="..." />
+                            {/* <figure className="figure">
+                                <img height = "200px" src="/img/robot.jpg" className="figure-img img-fluid rounded" alt="..." />
                                 <figcaption className="figure-caption">
                                     A drawing inspired by the Lovers of Valdaro
                                 </figcaption>
-                            </figure>
+                            </figure> */}
                             {/* <img src='/img/me.jpg'></img> */}
                         </div>
                     </Grid>
                 </Grid>
             </Box>
+            <br></br>
         </div>
     );
 }

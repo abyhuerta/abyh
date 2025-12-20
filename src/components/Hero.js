@@ -13,8 +13,9 @@ function Hero(){
     return(
         <>
         <div id="hero">
-
-            {/* <FractalTree/> */}
+                <br></br>
+             {/* <FractalTree/>  */}
+             <img width="300px" src="/img/whale_shark.gif" alt="Fractal Tree" />
             <h1>Hi, I'm <span>Aby</span>.</h1>
             <h2>I'm a software engineer from Texas, passionate about building scalable applications and solving real-world problems through web development and data-driven solutions.<br/></h2>
 

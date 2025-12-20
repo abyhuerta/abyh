@@ -55,14 +55,16 @@ function Experience() {
     const [value, setValue] = React.useState(0);
 
     const experiences = {
-        // 'SL':{
-        //     company: "Scooter Lab",
-        //     role: "Full Stack Developer @",
-        //     duration: "AUG 2025 - PRESENT",
-        //     desc:[
-
-        //     ]
-        // },
+        'SL':{
+            company: "Scooter Lab",
+            role: "Full Stack Developer @",
+            duration: "AUG 2025 - PRESENT",
+            desc:[
+               "Contributing to RAMP (Research Activities Management Portal) ScooterLab’s web platform for managing researcher projects and secure data access to the micromobility testbed.",
+               "Designed and implemented a project-level analytics dashboard for RAMP, enabling researchers to track project progress and analyze data efficiently.",
+               "Built an automated daily aggregation pipeline for RAMP, ensuring timely and accurate data aggregation for project management and reporting.",
+            ]
+        },
         'VISA':{
             company: "Visa",
             role: "Software Engineer Intern @",
@@ -72,14 +74,16 @@ function Experience() {
                 "Delivered a one-stop solution projected to automate processes valued at $15M and demoed to the client to gather feedback and align with business requirements."
             ]
         },
-        // 'AN':{
-        //     company: "Arrow North Design",
-        //     role: "Software Engineer Intern @",
-        //     duration: "JAN 2025 - MAY 2025",
-        //     desc:[
-
-        //     ]
-        // },
+        'AN':{
+            company: "Arrow North Design",
+            role: "Software Engineer Intern @",
+            duration: "JAN 2025 - MAY 2025",
+            desc:[
+                  "Built software solutions for multiple early-stage clients, partnering with design and product to scope MVPs and ship production features.",
+    "Developed a tablet-friendly UI with ctrlX for real-time monitoring of building ventilation and fan status, including device health, thresholds, and operator controls.",
+    "Rebuilt a standard Shopify storefront to a custom WebStorm-based design, implementing Liquid sections, responsive components, and asset optimizations to match spec."
+            ]
+        },
         'UTSA': {
             company: "The University of Texas at San Antonio",
             role: "Computer Science Tutor @",
@@ -90,17 +94,17 @@ function Experience() {
                 "Collaborated with faculty to align tutoring strategies with course objectives, resulting in a 15% improvement in course success rates and positive feedback for patience and effective teaching methods."
             ]
         },
-        'GSSOC': {
-            company: "GirlScript Summer of Code",
-            role:"Open Source Developer @",
-            duration: "APR 2024 - OCT 2024",
-            desc: [
-                "Contributed to 5+ open-source projects, enhancing functionality and optimizing performance to improve user experience and project reliability, leading to a 25% increase in user satisfaction rating",
-                "Worked collaboratively within a team of 10+ developers to implement 20+ bug fixes and feature enhancements using Git and agile methodologies, reducing project completion time by 15%.",
-                "Partnered with senior developers to streamline code integration and refine development processes, supporting continuous improvement that resulted in a 40% reduction in integration issues across repositories.",
-                "Integrated third-party APIs, adding 5+ new features to web applications and facilitating effective collaboration with global teams to meet project objectives."
-            ]
-        },
+        // 'GSSOC': {
+        //     company: "GirlScript Summer of Code",
+        //     role:"Open Source Developer @",
+        //     duration: "APR 2024 - OCT 2024",
+        //     desc: [
+        //         "Contributed to 5+ open-source projects, enhancing functionality and optimizing performance to improve user experience and project reliability, leading to a 25% increase in user satisfaction rating",
+        //         "Worked collaboratively within a team of 10+ developers to implement 20+ bug fixes and feature enhancements using Git and agile methodologies, reducing project completion time by 15%.",
+        //         "Partnered with senior developers to streamline code integration and refine development processes, supporting continuous improvement that resulted in a 40% reduction in integration issues across repositories.",
+        //         "Integrated third-party APIs, adding 5+ new features to web applications and facilitating effective collaboration with global teams to meet project objectives."
+        //     ]
+        // },
         // 'GTX': {
         //     company: "Global Tech Experience x Publicis Sapient",
         //     role: "Web Development Apprentice @",
@@ -149,12 +153,12 @@ function Experience() {
   </Box >
   {Object.keys(experiences).map((key, i) => (
     <CustomTabPanel key={key} value={value} index={i}>
-      <span className="joblist-job-title">{experiences[key]["role"] + " "}</span>
-      <span className="joblist-job-company">{experiences[key]["company"]}</span>
+      <h3>{experiences[key]["role"] + " "}</h3>
+      <h3 className="joblist-job-company">{experiences[key]["company"]}</h3>
       <div className="joblist-duration">{experiences[key]["duration"]}</div>
       <ul className="job-description">
         {experiences[key]["desc"].map((descItem, i) => (
-          <li key={i}>{descItem}</li>
+          <li key={i}><h3>{descItem}</h3></li>
         ))}
       </ul>
     </CustomTabPanel>
