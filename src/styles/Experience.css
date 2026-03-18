@@ -1,6 +1,7 @@
 #experience{
     margin:  auto;
     width:65%;
+    padding-bottom: 10%;
 }
 .joblist-job-title{
     color:var(--title);

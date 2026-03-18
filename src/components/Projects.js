@@ -19,19 +19,25 @@ function Projects() {
         open: 'https://abyhuerta.github.io/gen-QR/',
         image: '/img/genQR.png'
     },
-    'Aromagic': {
+    'Embedded Systems Project': {
         techstack: ['Firebase', 'JavaScript', 'HTML'],
         desc: 'An e-commerce platform for aromatic products with Firebase integration.',
-        link: 'https://github.com/abyhuerta/Aromagic',
-        open: '_blank',
-        image: '/img/aromagic.png'
+        link: '_blank',
+        open: 'https://youtu.be/cdJd2ql5n7c?si=surA_IT6c8eH2sRu',
+        image: '/img/image copy 3.png'
     }
 };
 
     const project = {
+      'DocuScanner': {
+          techstack: ['Angular', 'Firebase'],
+          desc: 'A document scanner that processes images of documents to PDFs + stores them.',
+          link: 'https://github.com/abyhuerta/document-scanner',
+          open: 'https://github.com/abyhuerta/document-scanner'
+      },
       'NutriPass': {
           techstack: ['Flask', 'React.js', 'Python'],
-          desc: 'A grocery filtering app that identifies items based on dietary needs. (IN PROGRESS)',
+          desc: 'A grocery filtering app that identifies items based on dietary needs.',
           link: 'https://github.com/abyhuerta/NutriPass',
           open: 'https://github.com/abyhuerta/NutriPass',
       },
@@ -53,15 +59,11 @@ function Projects() {
           link: 'https://github.com/abyhuerta/ocean-card-match-game',
           open: 'https://abyhuerta.github.io/ocean-card-match-game/',
       },
-      'Zathura': {
-          techstack: ['Python'],
-          desc: 'A Linux GUI for simplified app installations.',
-          link: 'https://github.com/joshuascript/Zathura',
-          open: 'https://github.com/joshuascript/Zathura'
-      },
-      'Schoolhouse-Creamery': {
-          techstack: ['React.js', 'PHP', 'MySQL', 'Clover API'],
-          desc: 'A website for a local ice cream shop with order management and payments. (IN PROGRESS)',
+      'Aromagic':{
+          techstack: ['Firebase', 'JavaScript', 'HTML'],
+          desc: 'An e-commerce platform for aromatic products with Firebase integration.',
+          link: 'https://github.com/abyhuerta/Aromagic',
+          open: '_blank',
       }
     };
     

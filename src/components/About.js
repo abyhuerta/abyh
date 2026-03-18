@@ -8,7 +8,7 @@ import '../styles/About.css';
 function About() {
     const intro = (
             <h3>
-            I am currently a <b>Full Stack Developer</b> at <a href="https://scooterlab.utsa.edu/"> Scooter Lab</a> and a <b>full-time student</b> at  
+            I am currently a <b>Undergraduate Research Assistant</b> at <a href="https://scooterlab.utsa.edu/"> Scooter Lab</a> and a <b>full-time student</b> at  
     <a href="https://www.utsa.edu/"> The University of Texas at San Antonio</a> where I'm pursuing a <b>Bachelor of Science in Computer Science</b> with a concentration in <b>Software Engineering</b>. I've been working with several technologies,
             including:
         </h3>
@@ -16,7 +16,7 @@ function About() {
 
     const extra = (
         <h3>
-            When I'm not working, I like to follow the developments of science (specifically the cosmos), cooking, and I
+            When I'm not working, I like to follow the developments of science (specifically the cosmos), music, and I
             enjoy hiking.
         </h3>
     );

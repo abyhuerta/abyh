@@ -15,7 +15,7 @@ function Navbar(){
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
           <a className="nav-link" aria-current="page" href="/">Home</a>
-          <a href="#about-target" className="nav-link">About Me</a>
+          <a href="#about-target" className="nav-link">About</a>
           <a href="#experience-target" className="nav-link">Experience</a>
           <a href="#projects-target" className="nav-link">Projects</a>
           {/* <Link className="nav-link" to="/hpml">Research</Link> */}

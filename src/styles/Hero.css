@@ -1,22 +1,238 @@
-#hero{
-    /* background-image: url('\img\Untitled_Artwork.png'); */
-    margin: auto;
-    width: 65vw;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
+#hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    overflow: hidden;
+    gap: 50px;
+    justify-content: center;
 }
 
-#hero i{
-    font-size: 40px;
+/* ── STARS ── */
+#hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(1px 1px at 8% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+        radial-gradient(2px 2px at 22% 72%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 38% 10%, rgba(255,255,255,0.6) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 55% 88%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 30%, rgba(255,255,255,0.7) 0%, transparent 100%),
+        radial-gradient(2px 2px at 82% 60%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 91% 18%, rgba(255,255,255,0.6) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 15% 45%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 95% 80%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(2px 2px at 47% 55%, rgba(255,255,255,0.3) 0%, transparent 100%);
 }
 
-#hero a{
+/* ── LEFT ── */
+.hero-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.hero-circle-wrapper {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    flex-shrink: 0;
+}
+
+.hero-spin-svg {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 450px;
+    height: 450px;
+    overflow: visible;
+    transform-origin: 50% 50%;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.hero-spin-text {
+    font-size: 11px;
+    fill: var(--secondary);
+    letter-spacing: 3px;
+    font-family: 'NTR', sans-serif;
+    text-transform: uppercase;
+}
+
+.hero-portrait {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-name-vert {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.95;
+}
+
+.hero-name-vert span {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--title);
+    letter-spacing: 0.06em;
+    display: block;
+}
+
+/* ── CENTER ── */
+.hero-center {
+    flex: 1;
+    max-width: 560px;
+}
+
+.hero-tagline {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    color: var(--title);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.4;
+    margin: 0 0 26px;
+}
+
+.hero-tagline-em {
+    font-style: italic;
+    color: var(--title);
+}
+
+.hero-desc {
+    font-size: 1.05rem;
+    color: var(--secondary);
+    line-height: 1.75;
+    margin: 0 0 38px;
+    max-width: 460px;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 13px 64px;
+    border: 1px solid var(--title);
     color: var(--title);
     text-decoration: none;
-    transition-duration: .5s;
+    font-size: 1rem;
+    letter-spacing: 0.18em;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    text-align: center;
+    font-family: 'NTR', sans-serif;
 }
 
-#hero a:hover{
+.hero-btn:hover {
+    background-color: rgba(204, 214, 246, 0.07);
     color: var(--link);
+    border-color: var(--link);
+}
+
+/* ── RIGHT decorative ── */
+.hero-deco {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    line-height: 0.82;
+    user-select: none;
+    pointer-events: none;
+}
+
+.hero-deco span {
+    font-size: clamp(4rem, 7.5vw, 8rem);
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(100, 255, 218, 0.1);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    display: block;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        padding: 100px 30px 60px;
+        gap: 36px;
+        text-align: center;
+    }
+
+    .hero-left {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-circle-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-spin-svg {
+        top: -8px;
+        left: -8px;
+        width: 256px;
+        height: 256px;
+    }
+
+    .hero-portrait {
+        width: 195px;
+        height: 195px;
+    }
+
+    .hero-name-vert {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .hero-name-vert span {
+        font-size: 2rem;
+    }
+
+    .hero-center {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-tagline {
+        font-size: clamp(1.4rem, 6vw, 1.9rem);
+    }
+
+    .hero-desc {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+
+    .hero-btns {
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-btn {
+        width: 100%;
+        min-width: unset;
+        padding: 12px 0;
+    }
 }

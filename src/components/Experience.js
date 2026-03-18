@@ -57,11 +57,11 @@ function Experience() {
     const experiences = {
         'SL':{
             company: "Scooter Lab",
-            role: "Full Stack Developer @",
+            role: "Undergrad Research Assistant @",
             duration: "AUG 2025 - PRESENT",
             desc:[
                "Contributing to RAMP (Research Activities Management Portal) ScooterLab’s web platform for managing researcher projects and secure data access to the micromobility testbed.",
-               "Designed and implemented a project-level analytics dashboard for RAMP, enabling researchers to track project progress and analyze data efficiently.",
+               "Developed a synthetic data collection pipeline to generate scooter POV training data for metric depth estimation.",
                "Built an automated daily aggregation pipeline for RAMP, ensuring timely and accurate data aggregation for project management and reporting.",
             ]
         },
@@ -133,16 +133,16 @@ function Experience() {
       aria-label="basic tabs example"
       textColor="inherit"
       TabIndicatorProps={{
-        style: { backgroundColor: '#64ffda' },
+        style: { backgroundColor: 'var(--link)' },
       }}
       sx={{
         '.MuiTab-root': {
-          color: '#ccd6f6', 
+          color: '#ccd6f6',
           fontFamily: 'NTR'
         },
         '.Mui-selected': {
-          color: '#64ffda',
-          fontWeight: 'bold', 
+          color: 'var(--link)',
+          fontWeight: 'bold',
         },
       }}
     >
